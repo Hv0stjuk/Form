@@ -13,7 +13,7 @@ body {
 .feedback {
 	height: 100vh;
 	width: 100vw;
-	background: rgba(0,0,0, 0.4);
+	background: rgba(29, 80, 138, 0.4);
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: flex;
@@ -30,6 +30,8 @@ body {
 	width: 920px;
 	height: 820px;
 	background-color: white;
+	position: relative;
+	box-shadow: 0px 0px 20px rgb(104, 104, 104);
 }
 
 .feedback__top {
@@ -107,8 +109,8 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
-	border-top: 1px solid black;
-  border-bottom: 1px solid black;
+	background-color: #f8f8f8;
+	box-shadow: 0px 0px 0px rgb(4, 18, 145);
 }
 
 .feedback__form {
@@ -122,14 +124,34 @@ body {
 .form__input {
 	width: 500px;
 	height: 40px;
-	border: 2px solid #b3cbda;
+	border: 2px solid #efefef;
+
 }
 
+::-webkit-input-placeholder {
+	font-size: 16px;
+	font-weight: 400;
+	color: #bdbdbd;
+	padding-left: 30px;
+
+}
+
+
+.input:focus {
+	border: 2px solid #b3cbda;
+	outline: none;
+	background-color: #d3e6f4;
+	box-shadow: 0px 0px 8px rgb(4, 18, 145);
+}
+
+.input:focus::-webkit-input-placeholder {
+	color: black;
+}
 
 .form__input--big {
 	height: 147px;
 	width: 500px;
-	border: 2px solid #b3cbda;
+	border: 2px solid #efefef;
 }
 
 .feedback__btn {
@@ -159,7 +181,10 @@ body {
 }
 
 .form__prompt {
-
+	color: #cddbe5;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	font-weight: 400;
 }
 
 .feedback__captcha {
@@ -168,4 +193,42 @@ body {
 
 .captcha__img {
 
+}
+
+.close__btn {
+	height: 35px;
+	width: 35px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #e10101;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	top: -17px;
+}
+
+.close__span {
+
+}
+
+.close__span:before, .close__span:after {
+	position: absolute;
+	left: 17px;
+	content: "";
+	height: 20px;
+	width: 2px;
+	background-color: rgb(255, 255, 255);
+	top: 8px;
+}
+
+.close__span:before {
+	transform: rotate(45deg);
+}
+	
+.close__span:after {
+	transform: rotate(-45deg);
 }
