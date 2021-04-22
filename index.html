@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FORM</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<div class="feedback">
-		<div class="feedback__top">
-			<nav class="feedback__nav nav">
-				<ul class="nav__list">
-					<li class="nav__item">
-						<a class="nav__link" href="#">Главная</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Контакты</a>
-					</li>
-					<li class="nav__item">
-						<a class="nav__link" href="#">Форма обратной связи</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div class="feedback__main">
-			<form class="feedback__form form" id="feedback">
-				<input class="form__input" type="text" name="name" required="required" placeholder="Введите Ваше ФИО">
-				<input class="form__input" type="email" name="email" required="required" placeholder="Введите Ваш Email">
-				<input class="form__input" type="tel" name="phone" required="required" placeholder="Введите Ваш телефон">
-				<input class="form__input" type="text" name="comment" placeholder="Введите Ваш комментарий">
-				<button type="submit">Отправить</button>
-			</form>
-		</div>
-		<div class="feedback__bottom">
-				<input class="form__input" type="text" name="captcha" required="required" form="feedback" >
-				<p class="form__prompt">Введите код на картинке справа</p>
-			<div class="feedback__captcha captcha">
-				<img class="captcha__img" src="#" />
-			</div>
-		</div>	
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__top">
+          <nav class="feedback__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Форма обратной связи</a>
+              </li>
+            </ul>
+          </nav>
+          <h2 class="feedback__title title">Форма обратной связи</h2>
+        </div>
+        <div class="feedback__main">
+          <form class="feedback__form form" id="feedback">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              required="required"
+              placeholder="Введите Ваше ФИО"
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              required="required"
+              placeholder="Введите Ваш Email"
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="phone"
+              required="required"
+              placeholder="Введите Ваш телефон"
+            />
+            <input
+              class="form__input--big"
+              type="text"
+              name="comment"
+              placeholder="Введите Ваш комментарий"
+            />
+            <button class="feedback__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="feedback__bottom">
+          <div class="feedback__bottom-inner">
+            <input
+              class="form__input--small"
+              type="text"
+              name="captcha"
+              required="required"
+              form="feedback"
+            />
+            <p class="form__prompt">Введите код на картинке справа</p>
+          </div>
+          <div class="feedback__captcha captcha">
+            <img class="captcha__img" src="assets/capcha.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

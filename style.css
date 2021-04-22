@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(assets/background.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.feedback {
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0, 0.4);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 30px;
+	width: 920px;
+	height: 820px;
+	background-color: white;
+}
+
+.feedback__top {
+
+}
+
+.feedback__nav {
+
+}
+
+.nav__list {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.nav__item {
+
+}
+
+.nav__item+.nav__item {
+	margin-left: 20px;
+}
+
+.nav__link {
+	font-size: 12px;
+	font-weight: 400;
+	color: #b8b9b9;
+	text-decoration: none;
+}
+
+.nav__link:hover {
+	color: #0e1010;
+}
+
+.feedback__title {
+	font-size: 38px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: #0e1010;
+	position: relative;
+}
+
+.feedback__title::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url(assets/line.png);
+	height: 10px;
+	width: 63px;
+	background-size: contain;
+	background-repeat: no-repeat;
+  top: -35px;
+  left: 154px;
+}
+
+.feedback__title::after {
+	content: "";
+	display: block;
+	position: absolute;	
+	background-image: url(assets/line.png);
+	height: 10px;
+	width: 63px;
+	background-size: contain;
+	background-repeat: no-repeat;
+  top: 70px;
+  left: 154px;
+}
+
+.feedback__main {
+	height: 430px;
+	width: 100%;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.feedback__form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.form__input {
+	width: 500px;
+	height: 40px;
+	border: 2px solid #b3cbda;
+}
+
+
+.form__input--big {
+	height: 147px;
+	width: 500px;
+	border: 2px solid #b3cbda;
+}
+
+.feedback__btn {
+	height: 65px;
+	width: 210px;
+	background-color: #16ba98;
+	border: none;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+  left: 356px;
+  bottom: -230px;
+}
+
+.feedback__bottom {
+	display: flex;
+}
+
+.feedback__bottom-inner {
+
+}
+
+.form__input--small {
+	width: 320px;
+	height: 40px;
+	border: 2px solid #b3cbda;
+}
+
+.form__prompt {
+
+}
+
+.feedback__captcha {
+
+}
+
+.captcha__img {
+
+}
