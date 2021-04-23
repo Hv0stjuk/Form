@@ -49,8 +49,9 @@ body {
 }
 
 .nav__item {
-
+	color: #b8b9b9;
 }
+
 
 .nav__item+.nav__item {
 	margin-left: 20px;
@@ -59,8 +60,12 @@ body {
 .nav__link {
 	font-size: 12px;
 	font-weight: 400;
-	color: #b8b9b9;
 	text-decoration: none;
+}
+
+.nav__link.nav__link--active {
+	color: #0e1010;
+	font-weight: 700;
 }
 
 .nav__link:hover {
