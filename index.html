@@ -26,50 +26,58 @@
           <h2 class="feedback__title title">Форма обратной связи</h2>
         </div>
         <div class="feedback__main">
-          <form class="feedback__form form" id="feedback">
-            <input
-              class="form__input input"
-              type="text"
-              name="name"
-              required="required"
-              placeholder="Введите Ваше ФИО"
-            />
-            <input
-              class="form__input input"
-              type="email"
-              name="email"
-              required="required"
-              placeholder="Введите Ваш Email"
-            />
-            <input
-              class="form__input input"
-              type="tel"
-              name="phone"
-              required="required"
-              placeholder="Введите Ваш телефон"
-            />
-            <input
-              class="form__input--big input"
-              type="text"
-              name="comment"
-              placeholder="Введите Ваш комментарий"
-            />
-            <button class="feedback__btn" type="submit">Отправить</button>
-          </form>
+          <div class="container">
+            <div class="main__wrapper">
+              <form class="feedback__form form" id="feedback">
+                <input
+                  class="form__input input"
+                  type="text"
+                  name="name"
+                  required="required"
+                  placeholder="Введите Ваше ФИО"
+                />
+                <input
+                  class="form__input input"
+                  type="email"
+                  name="email"
+                  required="required"
+                  placeholder="Введите Ваш Email"
+                />
+                <input
+                  class="form__input input"
+                  type="tel"
+                  name="phone"
+                  required="required"
+                  placeholder="Введите Ваш телефон"
+                />
+                <input
+                  class="form__input form__input--big input"
+                  type="text"
+                  name="comment"
+                  placeholder="Введите Ваш комментарий"
+                />
+                <button class="feedback__btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="feedback__bottom">
-          <div class="feedback__bottom-inner">
-            <input
-              class="form__input--small input"
-              type="text"
-              name="captcha"
-              required="required"
-              form="feedback"
-            />
-            <p class="form__prompt">Введите код на картинке справа</p>
-          </div>
-          <div class="feedback__captcha captcha">
-            <img class="captcha__img" src="assets/capcha.png" />
+          <div class="container">
+            <div class="bottom__wrapper">
+              <div class="feedback__bottom-inner">
+                <input
+                  class="form__input--small input"
+                  type="text"
+                  name="captcha"
+                  required="required"
+                  form="feedback"
+                />
+                <p class="form__prompt">Введите код на картинке справа</p>
+              </div>
+              <div class="feedback__captcha captcha">
+                <img class="captcha__img" src="assets/capcha.png" />
+              </div>
+            </div>
           </div>
         </div>
         <button class="close__btn">
